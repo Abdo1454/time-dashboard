@@ -52,10 +52,11 @@ body {
   height: 120px;
   border-radius: 0 0 15px 15px;
 }
-.choose p {
+.naturl {
   padding-left: 10px;
   color: rgb(49, 51, 77);
 }
+
 .choose p:hover {
   color: #fff;
   cursor: pointer;
@@ -67,7 +68,7 @@ body {
 }
 .card-image{
 transform: translateY(30px);
-padding-left: 170px;
+padding-left: 190px;
 /* transform: translateX(180px); */
 }
 .card-content{
@@ -75,17 +76,110 @@ padding-left: 170px;
     flex-direction: column;
     gap: 20px;
     width: 300px;
-    height: 145px;
-    padding-top: 20px;
+    height: 135px;
+    padding-top: 10px;
     padding-left:20px ;
     border-radius: 15px;
     color: #fff;
     transform: translateZ(50px);
     background: #1d204b ;
 }
+.card-content:hover{
+  cursor: pointer;
+  background: #3b3f79;
+}
 .card-content h2{
     font-size: 45px;
 }
 .card-content p{
     color: rgb(49, 51, 77);
+}
+/* image class */
+.Work{
+  background: hsl(15.1deg 100% 69.61%);
+  width: 127px;
+  height: 80px;
+  border-radius: 15px;
+}
+.Play{
+  background: rgb(84 196 230);
+  width: 127px;
+  height: 80px;
+  border-radius: 15px;
+}
+.Study{
+  background: rgb(255 94 125);
+  width: 127px;
+  height: 80px;
+  border-radius: 15px;
+}
+.Exercise{
+  background: rgb(75 207 131);
+  width: 127px;
+  height: 80px;
+  border-radius: 15px;
+}
+.Social{
+  background: rgb(114 53 209);
+  width: 127px;
+  height: 80px;
+  border-radius: 15px;
+}
+.Self {
+  background: rgb(241 199 90);
+  width: 127px;
+  height: 80px;
+  border-radius: 15px;
+}
+
+/* mobile  */
+@media (max-width: 391px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .profile-content{
+    width: 330px;
+  }
+  .choose{
+    width: 350px;
+  }
+  .card-content{
+    width: 330px;
+
+  }
+  .card-mobile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-mobile p{
+    font-size: 18px;
+    color: rgb(170, 181, 191);
+  }
+  .Work{
+    width: 160px;
+  }
+  .Play{
+    width: 160px;
+  }
+  .Study{
+    width: 160px;
+  }
+  .Exercise{
+    width: 160px;
+  }
+  .Social{
+    width: 160px;
+  }
+  .Self{
+    width: 160px;
+  }
+}
+.click1{
+  color: #fff;
+  padding-left: 10px;
 }
